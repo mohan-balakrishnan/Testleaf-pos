@@ -41,7 +41,7 @@ stderr_logfile=/var/log/api.err.log\n\
 stdout_logfile=/var/log/api.out.log\n" > /etc/supervisor/conf.d/supervisord.conf
 
 # Expose the ports that the services will run on
-EXPOSE 80 3500
+EXPOSE 31100 31200
 
 # Start Supervisor to run both services
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
